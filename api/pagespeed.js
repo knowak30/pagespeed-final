@@ -1,4 +1,6 @@
-export default async function handler(req, res) {
+const fetch = require('node-fetch');
+
+module.exports = async (req, res) => {
   const { url } = req.query;
 
   if (!url) {
@@ -14,4 +16,4 @@ export default async function handler(req, res) {
   } catch (error) {
     res.status(500).json({ error: 'Błąd API', details: error.message });
   }
-}
+};
