@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: 'Brak parametru URL' });
   }
 
-  const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=mobile&key=TWÓJ_KLUCZ_API`;
+  const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(url)}&strategy=mobile&key=AIzaSyCIg_L8MgBQ7n1HweXNHkaz5QCdmlmmwMo`;
 
   try {
     const response = await fetch(apiUrl);
